@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span src="images/lycee.png" alt="" ></span>
+							<a href="#CV">
+								<i class="fas fa-portrait fa-3x" style="transform: translateY(15px);"></i>
+							  </a>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Portfolio</h1>
+								<p>BTS SIO SLAM Lycée Ella Fitzgerald<br />
+									<figure class="alignleft size-full is-resized">
+										<a href="https://ella-fitzgerald.ent.auvergnerhonealpes.fr">
+										  <img src="images/lycee.png" alt="Logo du lycée" />
+										</a>
+									  </figure>	  
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#Projet">Projet</a></li>
+								<li><a href="#Mission">Mission</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- CV -->
+						<article id="CV">
+						<h2 class="major">Mon Curriculum vitae</h2>
+						<span class="image main"><img src="images/CV.png" alt="Ma photo" width="" height="1000" /></span>
+						
+						<!-- Conteneur pour centrer le bouton -->
+						<div class="center-button">
+						<!-- Bouton pour imprimer l'image -->
+						<button id="imprimerImage">Imprimer l'image</button>
+						</div>
+						<li class="center-button">
+							<a href="#">
+							  <button>Acceuil</button>
+							</a>
+						  </li>
+					
+						<script>
+						// Fonction pour imprimer l'image
+						document.getElementById("imprimerImage").addEventListener("click", function () {
+							var imageToPrint = document.querySelector("#CV img");
+							var imgSrc = imageToPrint.src;
+						
+							var printWindow = window.open("", "_blank");
+							printWindow.document.open();
+							printWindow.document.write("<html><head><title>Image à imprimer</title></head><body>");
+							printWindow.document.write('<img src="images/CV.png"' + imgSrc + '" style="max-width: 100%;" />');
+							printWindow.document.write("</body></html>");
+							printWindow.document.close();
+							printWindow.print();
+							printWindow.close();
+						});
+						</script>
+					</article>
+					
+					<style>
+						/* Styles pour centrer le bouton */
+						.center-button {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-top: 20px; /* Marge pour espacer du contenu précédent */
+						}
+					</style>
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Qui Suis-Je ?</h2>
+								<span class="image main"><img src="images/photoMateo.jpg" alt="Ma photo" width="" height="900" /></span>
+								<p>Je m’appelle Matéo Ramet, j’ai 20 ans. Diplômé d’un baccalauréat STI2D option SIN, je suis actuellement étudiant en BTS SIO. Je souhaite me spécialiser dans le secteur de la programmation de jeux vidéo. Mon objectif au cours de ma formation est d'acquérir les compétences nécessaires au métier de développeur informatique. Pour cela, j’ai donc poursuivi mes études en BTS SIO option SLAM.</p>
+								<h2 class="major">Mes Atouts</h2>
+								<figure class="wp-block-table is-style-regular" style="font-size: 15px; text-transform: capitalize">
+									<table class="has-white-color has-text-color has-fixed-layout">
+									  <thead>
+										<tr>
+										  <th class="has-text-align-right" data-align="right">
+											<mark style="background-color: rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Curieux</mark>
+										  </th>
+										  <th>
+											<mark style="background-color: rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Ouvert d'esprit</mark>
+										  </th>
+										  <th>
+											<mark style="background-color: rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Persévérant</mark>
+										  </th>
+										  <th>
+											<mark style="background-color: rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Créatif</mark>
+										  </th>
+										  <th>
+											<mark style="background-color: rgba(0, 0, 0, 0)" class="has-inline-color has-white-color">Team-Work</mark>
+										  </th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+											<td>
+												<img decoding="async" src="images/loupe.jpg" alt="" style="width: 100px;"><br>
+											</td>
+											<td>
+												<img decoding="async" loading="lazy" src="images/esprit.jpg" alt="" width="100" height="100"><br>
+											</td>
+											<td>
+												<img decoding="async" loading="lazy" src="images/stonk.jpg" alt="Persévérant" width="100" height="100"><br>
+											</td>
+											<td>
+												<img decoding="async" src="images/creatif.jpg" alt="" style="width: 100px;">
+											</td>
+											<td>
+												<img decoding="async" loading="lazy" src="images/images_Team-Work.jfif" alt="" width="100" height="100">
+											</td>
+										</tr>
+									  </tbody>
+									</table>
+								  </figure>
+								  
+								<h2 class="major">Mon Objectif</h2>
+								<p>Mon objectif de carrière professionnelle est d’évoluer dans le domaine du Jeu vidéo. Pour y parvenir j&rsquo;ai besoin  d&rsquo;apprendre un large panel de langage de programmation, ce qui me permettra pas la suite de pouvoir aller dans des écoles superieur pour pouvoir me specialisé dans la programmation de jeu vidéo.</p>
+							<!-- Conteneur pour centrer le bouton -->
+						<div class="center-button">
+							<!-- Bouton pour imprimer l'image -->
+							<a href="#work"> <!-- Remplacez "work.html" par l'URL de votre page "Work" -->
+								<button id="skip">Work</button>
+							  </a>  
+							</div>
+							<!-- Conteneur pour centrer le bouton -->
+							<div class="center-button">
+							<!-- Bouton pour imprimer l'image -->
+							<a href="#"> <!-- Remplacez "work.html" par l'URL de votre page "Work" -->
+								<button id="skip">Acceuil</button>
+							  </a>  
+							</div>
+							</article>
+						
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Hasler GROUP</h2>
+								<span class="image main"><img src="images/LOGO-HASLER-GROUP-SIGNATURE-PANTONE.png" alt="" /></span>
+								<h2 class="major"> Présentation du Groupe</h2>
+								<p>Le groupe HASLER implanté mondialement, est l’un des leaders de l’ingénierie de dosage et
+									de pesage industriel. Il met en œuvre son expertise dans la conception, l’intégration et la commercialisation de solutions de dosage gravimétrique pour produits vrac. </p>
+								<p>HASLER group regroupe désormais plusieurs entreprises, dans différents domaines d’activités ; HASLER® International pour le dosage (entreprise dans laquelle j’ai effectué mon stage), LUMPP® pour l’agitation, AOUSTIN® table Filters, Filtres PHILIPPE®, et Filtres VERNAY®   pour la filtration, UCP®, GUITTARD®, et NOVAMIX® pour le traitement.</p>
+								<span class="image main"><img src="images/domaine.png" alt="" /></span>
+								<p>HASLER International, entreprise pour laquelle j’ai travaillé durant mon stage, est spécialisé dans le développement et la vente de doseurs industriels. Les doseurs sont des organes industriels que l’on retrouve sur les chaines de productions, généralement à la suite d’un lieu de stockage de matière. HASLER propose alors différentes versions adaptées au type et/ou à la quantité de matière à transporter. Ils ne proposent pas simplement une gamme finie mais une gamme de produit qui reste encore adaptable. En effet la longueur des tapis de dosage est adaptable les matériaux utilisés pour la bande par exemple le sont aussi etc... </p>
+								<p>Ils proposent principalement trois grands types de dosage. Les doseurs à bande, les doseurs rotatifs et les doseurs gravimétriques. 
+									Différents capteurs de poids et de vitesse sont positionnés sur la bande et ils permettent d’obtenir les informations nécessaires pour commander à une vitesse correct les moteurs à tambour contrôlant la bande. Ce qui fait la force de ces produits en comparaison à d’autres que l’on pourrait trouver chez la concurrence, c’est qu’ils sont très polyvalents. Leur système de régulation est basé sur des entrées très variées qui permettent une grande sécurité et une grande adaptabilité. </p>
+									<p>Je vous ai donc présenté ici la partie concernant la mécanique et l’électronique de puissance mais tous ces systèmes sont commandés par une partie électronique qui peut prendre trois formes différentes en fonction des besoins. La première solution est le BFC qui est la version la plus simplifiée de commande. </p>
+									<p>En effet, cet équipement ne propose pas de régulation il sert simplement à gérer les différents capteurs, il fait office de totalisateur et de retour des capteurs à transmettre à la supervision. La seconde version est le WFC qui est une solution assez compacte permettant de réguler les doseurs à bande uniquement. Et enfin la dernière version avec laquelle j’ai travaillé qui est aussi la plus évoluée permet quant à elle de gérer la régulation de tous les types de produit ainsi que leur supervision est le contrôleur SCM3. Il est composé de la même architecture électronique que le WFC d’un point de vue logique. Il est composé de deux cartes, une gérant toute la communication avec les différents machines et IHM, la seconde gère quant à elle toute la partie calcul de régulation.</p>
+									<p>Les principaux secteurs d’activités d’HASLER sont cités ci-dessous, ils travaillent principalement sur de très gros volumes dans les différents secteurs cités dans la figure ci-dessous.</p>
+									<span class="image main"><img src="images/secteur.png" alt="" /></span>
+									<h2 class="major"> Historique</h2>
+									<p>1944 : Manfred et Rico Hasler fondent HASLER Frères.
+									2002 : Ouverture de bureaux de représentation à Aguascalientes, Mexico.<br>
+									2005 : Ouverture de bureaux HASLER Chine à SHANGHAI.<br>
+									2006 : Ouverture de bureaux HASLER en Asie à Kuala Lumpur – Malaisie et en Italie à Cecina.<br>
+									2007 : Ouverture de bureaux HASLER en Espagne à Madrid et en Russie à Tambov.<br>
+									2009 : Création de la holding JFInvestment.<br>
+									2011 : JFI acquiert RPA Process Technologies rebaptisé RPA Process.<br>
+									2013 : MERSEN entame un processus de cession de sa gamme “agitateurs” avec HASLER International.<br>
+									2016 : Les entreprises LUMPP, RPA Process et HASLER International deviennent HASLER Group</p>
+									<h2 class="major"> Présence Géographique</h2>
+									<p>La société mère est située en France Rue Louis Breguet 38780 Pont Evêque Z.I. De L’Abbaye près de Vienne entre Lyon et Grenoble. Sa présence dans la vallée du Rhône permet une collaboration étroite avec les industries du ciment et des engrais qui y sont présentes.</p>
+									<p>Par ailleurs la société dispose de 6 filiales pour un total de 9 bureaux techniques et commerciaux dans les pays suivants : Suisse, Allemagne, Chine, Espagne, Maroc, Italie, Russie, Malaisie, Tunisie, Turquie. J’ai d’ailleurs durant mon stage collaboré avec la Chine et la Suisse.</p>
+									<span class="image main"><img src="images/worldMap.png" alt="" /></span>
+									<h2 class="major"> Structure</h2>
+									<p>L’équipe d’HASLER Group est composée d’environ 100 personnes en France. M. JAMEY est le Président Directeur General et M. MALONDRA le Directeur General. L’effectif en incluant toutes les filiales représente près de 150 personnes.</p>
+									<p>Le personnel d’HASLER Group en France est réparti dans 8 services parmi lesquels nous retrouvons le service recherche et développement dont Olivier SAINT-CYR est le manager. Le service est composé de la manière suivante :</p>
+									<p>Olivier SAINT-CYR, manager et ingénieur en informatique et électronique industrielle </p>
+									<p>François MAGNIFOTCHAM, ingénieur informatique et communications réseaux  </p>
+									<p>Bailo DIALLO, ingénieur généraliste<br>
+										Formation : La Martinière Monplaisir à Lyon<br>
+										BAC S Option Science de l'Ingénieur</p>
+										<p>Déniz Gucenmez, Technicien supérieur et metteur en route<br>
+											Formation : Lycée Polyvalent GALILÉE <br>
+											Baccalauréat professionnelElectrotechnique, Energie, Equipements<br>
+											Université Grenoble Alpes<br>
+											Diplôme universitaire de technologie (DUT)Génie électrique et informatique industrielle</p> 
+											<span class="image main"><img src="images/photo.png" alt="" /></span>
+									<h2 class="major"> Produits</h2>
+									<p>HASLER est un constructeur d’équipements industriels incluant la mécanique et l’électronique.</p>
+									<div style="display: flex; align-items: center;">
+										<h2 class="major" style="margin-right: 250px;">Doseurs:</h2>
+										<span class="image main" style="flex-shrink: 10;">
+										  <img src="images/dosseurBande.jpg"  style="max-width: 300px;">
+										</span>
+									  </div>
+									  <p>Doseur à bande (Weight Belt Feeders)<br>
+										Débitmètres à impact (Impact Flow Meters)  <br>
+										Baccalauréat professionnelElectrotechnique, Energie, Equipements<br>
+										Convoyeurs à bonde (Belt Scales)<br>
+										Appareils de mesure divers</p> 
+										<h2 class="major"> Contrôleurs:</h2>
+										<p>Chaque doseur a besoin d’un système de régulation. Ces régulations PID (proportionnelle, intégrale et dérivée) fonctionnent sans interruption. Ils sont intégrés dans des boitiers répondant à des normes d’isolation et d’étanchéité ainsi que des normes spécifiques pour les environnements explosifs (Normes ATEX). Ces consoles sont conçues pour faciliter les interactions homme-machine.</p>
+										<h2 class="major"> De plus récent au plus ancien: </h2>
+										<p>SCM3<br>
+											BFC<br>
+											SCM2<br>
+											KSC <br>
+											MACC-VHRS<br>
+											HF9</p>
+											<span class="image main"><img src="images/machine.jpg" alt="" /></span>
+										<h2 class="major"> Clients principaux </h2>
+										<p>Ci-dessous une liste non-exhaustive des références client dont HASLER dispose, qui sont pour la majorité des industries du ciment :</p>
+										<span class="image main"><img src="images/client.jpg" alt="" /></span>
+										<nav>
+											<ul>
+												<li class="center-button">
+												  <a href="#Projet">
+													<button>Projet</button>
+												  </a>
+												</li>
+												<li class="center-button">
+												  <a href="#Mission">
+													<button>Mission</button>
+												  </a>
+												</li>
+												<li class="center-button">
+													<a href="#">
+													  <button>Acceuil</button>
+													</a>
+												  </li>
+											  </ul>
+											  
+											  
+										</nav>
+									</article>
+									
+								<!-- Projet -->
+									<article id="Projet">
+										<!-- Conteneur pour centrer le bouton -->
+										<li class="center-button">
+											<a href="#work">
+											  <button>Work</button>
+											</a>
+										  </li>
+								<span class="image main"><img src="images/LOGO-HASLER-GROUP-SIGNATURE-PANTONE.png" alt="" /></span>
+								<h2 class="major">Contexte du Projet</h2>
+								<h2> Introduction technique</h2>
+								<p>Durant mon stage j’ai intégré le service R&D électronique, celui-ci est comme il l’a été dit précédemment constitué de 3 ingénieurs. Pour la réalisation de mon projet de stage, j’ai été encadré par M. Bailo DIALLO et Olivier SAINT-CYR car M. François MAGNIFOTCHAM était en arrêt maladie. Ils étaient chargés du suivi de mon projet.</p>
+								<p>Le bureau R&D de HASLER recherche constamment des nouveautés à apporter aux équipements industriels qu’ils proposent à la vente. On peut citer comme exemple le logiciel RMS qui s’occupe de la supervision du contrôleur SCM3. Dans ce souhait de produire un SCM3 le plus performant et le plus pratique possible, le service R&D à voulu mettre à contribution un stagiaire pour la création d’un logiciel permettant la création et/ou la modification de tables de communications entre le SCM3 et le logiciel de supervision du client.</p>
+								<p>De là est né VisuaLLink, ce logiciel créer par un stagiaire avec l’accompagnement de M. MAGNIFOTCHAM et M. DIALLO qui évite de créer manuellement la table de communication. Le logiciel centralise tous les paramètres, toutes les alarmes du SCM3, et les classes par type de doseur et par famille pour simplifier l’utilisation. Ce logiciel répond à un besoin et sera utilisé par l’engineering lors de la conception de la documentation pour le client, par les techniciens sur sites et potentiels par le client ; ce qui permettrait à HASLER de ne pas envoyer un technicien pour modifier ou changer une table de communication, ce logiciel permet un gain de temps et d’argent non-négligeable à HASLER.</p>
+								<span class="image main"><img src="images/MainMenu.png" alt="" /></span>
+								<p>Donc pour ce projet j’ai repris ou c’était arrêter l’ancien stagiaire, j’ai donc commencé à me documenter et prendre en main le projet pour pouvoir établir une liste des problèmes à régler.   
+									Étant situés près du hangar ou les automates de test sont stockés, nous avons donc facilement accès aux machines pour les tests. J’ai donc pu tester le système sur un contrôleurs SCM3.</p>
+									<h2 class="major" style="font-size: 25px;">Présentation du projet VisuaLLink</h2>
+									<p>Dans cette partie nous allons aborder les différentes étapes qui m’ont permis l’amélioration ainsi que le développement du logiciel VisuaLLink.</p>
+									<h2> La mission</h2>
+									<p>La société HASLER Group est comme il l’a été dit précédemment, spécialisé dans la distribution de solution de dosage industrielle. En-effet elle suit ses produits du berceau jusqu’à la tombe, elle développe l’électronique, assemble le produit, vends et met en service le doseur. </p>
+									<p>La partie opérative du doseur est un contrôleur entièrement pensée par le bureau d’étude, le contrôleur SCM3, ce contrôleur réalise l’acquisition des données provenant du doseur, puis les traites pour pouvoir répondre aux besoins du client le plus précisément que possible. La transmission et le pilotage des données entre le contrôleur et le doseur est possible grâce à la table de communication qui est injecté dans le contrôleur. </p>
+									<p>La table de communication c’est un fichier que l’on va injecter dans le contrôleur via une carte SD. Elle est composée d’éléments tels que des paramètres ; ce sont des éléments qui interviennent dans le processus de dosage, ils vont soit être lu (ex : la vitesse, le poids) soit écrit, c’est-à-dire qu’ils vont communiquer une information au contrôleur pour qu’il exécute une action. Les alarmes vont prévenir l’utilisateur des potentiels problèmes que le doseur va rencontrer pendant la production, on les retrouve en lecture. Les commandes servent à donner des ordres de mise en marche ou d’arrêt par exemple. Les statuts donnent l’information sur l’état d’un élément du doseur par exemple doseur allumé ou éteint. Un Heart bit et un Host Heart bit qui vérifient la bonne communication entre contrôleur et la supervision. </p>
+									<span class="image main"><img src="images/TableCOM.png" alt="" /></span>
+									<p>Tous les éléments exposés ci-dessus sont rangés selon 2 grandes catégories ; les INPUT constitués des paramètres en écriture, des commandes et du Host Heart bit, et les OUTPUT constitués des paramètres en lecture, des alarmes et des statuts. Les éléments en OUTPUT vont être récupérés à la suite de leur acquisition par le SCM3 et celles en INPUT vont être donnés au SCM3 afin qu’il les exécute. Les éléments en INPUT et en OUTPUT sont rangés selon une adresse propre à chacun d’eux afin que le logiciel de supervision puisse aller les lire.</p>
+									<span class="image main"><img src="images/Tablecom (3).png" alt="" /></span>
+									<p>Jusqu’à maintenant la table de communication était écrite manuellement sur Notpad++ (c’est un éditeur de texte), de ce fait il y’avait souvent des erreurs dans l’écriture de celle-ci. Ce logiciel permet aussi aux techniciens de ne pas se déplacer chez le client pour modifier la table de communication, elle pourra être modifiée par le client directement.</p>
+									<h2> L’environnement</h2>
+									<p>Je vais vous expliquer l’insertion dans mon stage avec la découverte de l’outils que j’avais à ma disposition, me permettant de créer ma stratégie pour réussir le projet que j’avais à réaliser. </p>
+									<!-- Conteneur pour centrer le bouton -->
+									<li class="center-button">
+										<a href="#Mission">
+										  <button>Mission</button>
+										</a>
+									  </li>
+									<li class="center-button">
+										<a href="#">
+										  <button>Acceuil</button>
+										</a>
+									  </li>
+								</article>
+
+								<!-- Mission -->
+								<article id="Mission">
+									<div class="center-button">
+										<!-- Bouton pour imprimer l'image -->
+										<a href="#work"> <!-- Remplacez "work.html" par l'URL de votre page "Work" -->
+											<button id="skip">Work</button>
+										  </a>  
+										</div>
+										<li class="center-button">
+											<a href="#Projet">
+											  <button>Projet</button>
+											</a>
+										  </li>
+									<span class="image main"><img src="images/LOGO-HASLER-GROUP-SIGNATURE-PANTONE.png" alt="" /></span>
+									<h2 class="major">Découverte de WINDEV</h2>
+									<p>Dès mon entretien pour intégrer HASLER en tant que stagiaire, M. MAGNIFATCHAM m’avait expliqué que mon stage serait réalisé sur WINDEV. J’ai donc pris les devants et commencé à effectuer mes recherches sur ce logiciel en amont de mon stage. J’y découvre alors un outil de génie logiciel permettant de gérer de A à Z la création de notre logiciel, de la vue jusqu’à la programmation des actions à réaliser. WINDEV a son propre langage de programmation, le W Langage, celui-ci est enrichi d’une bibliothèque énorme facilitant le développement. Pour me familiariser avec ce logiciel j’ai regardé des vidéos explicatives, proposées par PC SOFT, j’ai aussi analysé le code d’un logiciel programmé par mon maitre de stage. En mettant en parallèle ces 2 méthodes de découvertes j’ai pu assez rapidement me familiariser avec ce nouveau langage. 	</p>
+									<h2 class="major">Sujet : </h2>
+									<p style="font-size: 30px;">Développement d’un Software et gestion de sa base de données sous Windev</p>
+									<h2>Résumé</h2>
+									<p>Voilà le rapport contenant l’intégralité de ces 2 mois stages, celui-ci retrace mes impressions ainsi que le résultat de mon travail.</p>
+									<p>Le sujet de mon stage répondait à un besoin, il fallait créer un logiciel permettant de générer facilement une table d’échange entre le contrôleur SCM3 (Smart Control Module 3) et le logiciel de supervision du client.</p>
+									<p>A l’issu de mon stage je considère que la mission qu’on m’a confiée est réussi. Le logiciel VisuaLLink en est le résultat, celui-ci est constitué d’une base de données comprenant tous les types d’éléments à ajouter dans une table de communication, ces éléments sont triés par type de machine. Ils sont accessibles via une interface utilisateur ludique et ergonomique qui permet une adaptation rapide et logique au logiciel.</p>
+									<p>Ce logiciel permet d’importer des tables par défauts pour les modifier, 80% de l’utilisation de celui-ci passe par cette fonctionnalité. Une fois la table de communication réadapté au client il est possible de l’exporter pour en créer un fichier interprétable par le SCM3.</p>
+								</li>
+								<li class="center-button">
+									<a href="#">
+									  <button>Acceuil</button>
+									</a>
+								  </li>
+								</article>
+
+					
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; PortFolio RAMET Matéo 2023-2024</a>.
+							<div style="text-align: center;"><img src="images/reseau_social.png" width="50" height="50"></a></div>
+						<div style="text-align: right;padding-right: 830px"><a href="https://www.instagram.com/mateo.rt_duke/?next=%2F"><img src="images/insta.webp" width="50" height="50"></a><a href="https://www.linkedin.com/in/mat%C3%A9o-ramet-037a4128b/"><img src="images/LinkedIn-Symbole.png" width="100" height="50"></a></div>
+					
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Configuration des particules
+				const particleConfig = {
+				  particleCount: 50,
+				  particleSpeed: 0.1,
+				  particleSize: 3,
+				  particleColor: '#ffffff',
+				  particleOpacity: 1
+				};
+			  
+				// Création des particules
+				const backgroundCanvas = document.getElementById('background');
+				const ctx = backgroundCanvas.getContext('2d');
+				let particles = [];
+			  
+				function createParticle(x, y) {
+				  const particle = {
+					x,
+					y,
+					angle: Math.random() * 2 * Math.PI,
+					speed: Math.random() * particleConfig.particleSpeed,
+					size: Math.random() * particleConfig.particleSize,
+					color: particleConfig.particleColor,
+					opacity: Math.random() * particleConfig.particleOpacity
+				  };
+				  particles.push(particle);
+				}
+			  
+				function createParticles() {
+				  const { width, height } = backgroundCanvas.getBoundingClientRect();
+			  
+				  for (let i = 0; i < particleConfig.particleCount; i++) {
+					const x = Math.random() * width;
+					const y = Math.random() * height;
+					createParticle(x, y);
+				  }
+				}
+			  
+				function drawParticles() {
+				  ctx.clearRect(0, 0, backgroundCanvas.width, backgroundCanvas.height);
+			  
+				  particles.forEach(particle => {
+					ctx.beginPath();
+					ctx.arc(particle.x, particle.y, particle.size, 0, 2 * Math.PI);
+					ctx.fillStyle = particle.color;
+					ctx.globalAlpha = particle.opacity;
+					ctx.fill();
+					ctx.closePath();
+				  });
+				}
+			  
+				function updateParticles() {
+				  particles.forEach(particle => {
+					particle.x += Math.cos(particle.angle) * particle.speed;
+					particle.y += Math.sin(particle.angle) * particle.speed;
+			  
+					if (particle.x < 0 || particle.x > backgroundCanvas.width || particle.y < 0 || particle.y > backgroundCanvas.height) {
+					  particle.x = Math.random() * backgroundCanvas.width;
+					  particle.y = Math.random() * backgroundCanvas.height;
+					}
+				  });
+				}
+			  
+				function loop() {
+				  drawParticles();
+				  updateParticles();
+				  requestAnimationFrame(loop);
+				}
+			  
+				createParticles();
+				loop();
+			  </script>
+	</body>
+</html>
